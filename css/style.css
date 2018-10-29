@@ -68,6 +68,8 @@ body {
 	line-height: 30px;
 	padding: 0 19px 0 19px;
 	border-radius: 20px;
+	transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
 }
 
 .common--button.green {
@@ -75,9 +77,17 @@ body {
 	color: #f5f5f5;
 }
 
+.common--button.green:hover {
+	background-color: #215958;
+}
+
 .common--button.grey {
 	background-color: #d2d5da;
 	color: #f5f5f5;
+}
+
+.common--button.grey:hover {
+	background-color: #313838;
 }
 
 /*end of common stylesheet*/
@@ -143,6 +153,7 @@ body {
 	margin-bottom: 5%;
 }
 
+
 /*header decoration*/
 .header__signature::before {
 	content: '';
@@ -181,6 +192,12 @@ body {
 	color: #ffffffff;
 	background-color: #50c3af;
 	border-radius: 30px;
+	transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+}
+
+.header__btn__link:hover {
+	background-color: #20543b;
 }
 
 /*advantages*/
@@ -190,7 +207,28 @@ body {
 }
 
 .advantages--container {
-	padding: 9.5% 0 4.5% 0;
+	padding: 4% 0 4.5% 0;
+}
+
+.advanteges__section__img {
+	margin: 0 auto 10.888111888% auto;
+}
+
+.advanteges__section__img.men {
+	max-width: 43px;
+}
+
+.advanteges__section__img.heart {
+	max-width: 38px;
+}
+
+.advanteges__section__img.headset {
+	max-width: 39px;
+}
+
+.advanteges__section__img img {
+	width: 100%;
+	height: auto;
 }
 
 .advantages__section {
@@ -202,37 +240,6 @@ body {
 	text-align: center;
 	position: relative;
 	margin-bottom: 10%;
-}
-
-/*advantages img*/
-.men::after {
-	content: '';
-	background-image: url(../img/user-group_copy.png);
-	position: absolute;
-	width: 43px;
-	height: 31px;
-	top: -350%;
-	left: 43%;
-}
-
-.heart::after {
-	content: '';
-	background-image: url(../img/heart.png);
-	position: absolute;
-	width: 38px;
-	height: 35px;
-	top: -360%;
-	left: 43%;
-}
-
-.headphones::after {
-	content: '';
-	background-image: url(../img/headset.png);
-	position: absolute;
-	width: 39px;
-	height: 42px;
-	top: -380%;
-	left: 43%;
 }
 
 .advantages__section__insection::before {
@@ -533,8 +540,12 @@ body {
 
 .resorces__group__item {
 	display: inline-block;
-	margin: 0 6.895%;
-	line-height: 24px;
+	margin: 0 4.895%;
+}
+
+.resorces__group__item img {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 /*end of resources*/
@@ -567,16 +578,18 @@ body {
 	display: inline-block;
 	text-align: right;
 	width: 49%;
-	line-height: 30px;
-
 }
 
 .footer__socials__item {
 	display: inline-block;
 	margin: 0 2%;
-	line-height: normal;
+}
+
+.footer__socials__item img {
+	display: inline-block;
 	vertical-align: middle;
 }
+
 
 /*end of footer*/
 
